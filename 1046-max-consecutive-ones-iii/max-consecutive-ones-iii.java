@@ -6,7 +6,7 @@ class Solution {
         int z = 0;
         while(r < nums.length){
             if(nums[r] == 0) z++;
-            while(z > k){
+            while(z > k && l <= r){
                 if(nums[l] == 0) z--;
                 l++;
             }
