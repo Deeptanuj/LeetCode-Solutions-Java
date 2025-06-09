@@ -5,7 +5,7 @@ class Solution {
         int maxlen = 0;
         List<Character> list = new ArrayList<Character>();
         while(r < s.length()){
-            while(list.contains(s.charAt(r))){
+            while(list.contains(s.charAt(r)) && l <= r){
                 list.remove(Character.valueOf(s.charAt(l)));
                 l++;
             }
