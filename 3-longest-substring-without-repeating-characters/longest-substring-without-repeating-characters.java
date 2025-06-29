@@ -3,7 +3,7 @@ class Solution {
         int l = 0;
         int r = 0;
         int maxlen = 0;
-        List<Character> list = new ArrayList<Character>();
+        List<Character> list = new ArrayList<>();
         while(r < s.length()){
             while(list.contains(s.charAt(r)) && l <= r){
                 list.remove(Character.valueOf(s.charAt(l)));
