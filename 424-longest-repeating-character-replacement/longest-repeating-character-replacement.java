@@ -3,8 +3,8 @@ class Solution {
         int l = 0;
         int r = 0;
         int maxlen = 0;
-        int maxf = Integer.MIN_VALUE;
         HashMap<Character, Integer> map = new HashMap<>();
+        int maxf = 0;
         while(r < s.length()){
             map.put(s.charAt(r), map.getOrDefault(s.charAt(r), 0) + 1);
             maxf = Math.max(maxf, map.get(s.charAt(r)));
