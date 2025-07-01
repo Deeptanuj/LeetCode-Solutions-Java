@@ -6,11 +6,11 @@ class Solution {
         reverse(nums, 0, k - 1);
         reverse(nums, k, n - 1);
     }
-    private void reverse(int nums[], int l, int r){
+    private static void reverse(int arr[], int l, int r){
         while(l <= r){
-            int t = nums[l];
-            nums[l] = nums[r];
-            nums[r] = t;
+            int t = arr[l];
+            arr[l] = arr[r];
+            arr[r] = t;
             l++;
             r--;
         }
