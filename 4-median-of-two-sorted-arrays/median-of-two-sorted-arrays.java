@@ -18,8 +18,8 @@ class Solution {
             if(m1 < n1) r1 = nums1[m1];
             if(m2 < n2) r2 = nums2[m2];
             if(l1 <= r2 && l2 <= r1){
-                if((n1 + n2) % 2 == 1) return Math.max(l1, l2);
-                return ((double)(Math.max(l1, l2) + Math.min(r1, r2))) / 2.0;
+                if((n1 + n2) % 2 != 0) return Math.max(l1, l2);
+                else return ((double)(Math.max(l1, l2) + Math.min(r1, r2))) / 2.0;
             }
             else if(l2 > r1) low = m1 + 1;
             else high = m1 - 1;
